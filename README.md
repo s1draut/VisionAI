@@ -78,6 +78,42 @@ The project demonstrates the practical integration of deep learning-based object
        User Output
 ```
 
+## Model Export & Performance Benchmark
+
+### ONNX Export
+
+YOLO11n was successfully exported from PyTorch to ONNX.
+
+| Property | Result |
+|---|---|
+| Model | YOLO11n |
+| Export format | ONNX |
+| ONNX opset | 18 |
+| Export time | 1.25 seconds |
+| ONNX model size | 10.21 MB |
+| Input size | 640 × 640 |
+
+### PyTorch vs ONNX Runtime
+
+Benchmark performed on an Intel Core i5-1235U CPU using Windows.
+
+| Metric | PyTorch | ONNX Runtime |
+|---|---:|---:|
+| Average latency | 59.03 ms | 55.55 ms |
+| Median latency | 56.14 ms | 52.34 ms |
+| Inference FPS | 16.94 | 18.00 |
+
+**Observed result:** ONNX Runtime achieved 5.89% lower average inference latency in this test.
+
+### Benchmark Methodology
+
+- 100 inference iterations per model.
+- 10 warm-up iterations per model.
+- Same input frame for both models.
+- CPU execution.
+- Inference image size: 640 × 640.
+- Ultralytics prediction pipeline used for both formats.
+
 ## Model Information
 
 - Model: YOLO11n (Nano)
