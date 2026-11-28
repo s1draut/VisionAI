@@ -1,0 +1,9 @@
+VISIONAI YOLO11n BENCHMARK
+Model: YOLO11n
+Device: CPU
+Processor: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+Resolution: 640x360
+Frames processed: 300
+Average inference: 49.36 ms/frame
+Inference FPS: 20.26
+End-to-end FPS: 20.03

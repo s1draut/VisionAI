@@ -1,0 +1,13 @@
+
+# Python environments
+venv/
+onnx_env/
+__pycache__/
+*.pyc
+
+# Temporary files
+.DS_Store
+*.log
+
+# Backup files
+app_backup.py

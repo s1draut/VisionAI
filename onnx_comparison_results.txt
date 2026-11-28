@@ -1,0 +1,8 @@
+VISIONAI PYTORCH VS ONNX BENCHMARK
+Input size: 640
+Iterations: 100
+PyTorch latency: 59.03 ms
+PyTorch FPS: 16.94
+ONNX latency: 55.55 ms
+ONNX FPS: 18.00
+Latency reduction: 5.89%
